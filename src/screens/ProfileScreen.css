@@ -37,11 +37,11 @@
   padding-left: 20px;
 }
 
-.profileScreen__signOut{
-    padding: 10px 20px;
-    font-style: 1rem;
-    margin-top: 5%;
-    width: 100%;
+.profileScreen__signOut {
+  padding: 10px 20px;
+  font-style: 1rem;
+  margin-top: 5%;
+  width: 100%;
 }
 
 .profileScreen__email {
@@ -56,13 +56,21 @@
   border: none;
   outline-width: 0;
 }
-.profileScreen__plans {
-  margin-top: 20px;
+.profileScreen__info > img {
+  height: 100px;
 }
 .profileScreen__plans > h3 {
   border-bottom: 1px solid #282c2d;
   padding-bottom: 10px;
 }
-.profileScreen__info > img {
-  height: 100px;
+.profileScreen__signout {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 5%;
+  width: 100%;
+  color: #fff;
+  background-color: #e50914;
+  outline-width: 0;
+  border: none;
+  cursor: pointer;
 }

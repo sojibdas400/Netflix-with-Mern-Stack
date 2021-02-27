@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
-import { auth } from "../firebase";
+import db, { auth } from "../firebase";
 import "./SignUpScreen.css";
 function SignUpScreen() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-
+  const sojib = null;
   const register = (e) => {
     e.preventDefault();
     auth
@@ -14,6 +14,12 @@ function SignUpScreen() {
       )
       .then((authUser) => console.log(authUser))
       .catch((error) => alert(error.message));
+    db.collection("customers")
+    .doc("sojib")
+      .set({
+        stripeId: emailRef.current.value,
+        stripeLink: emailRef.current.value + ".com",
+      });
   };
 
   const signIn = (e) => {
